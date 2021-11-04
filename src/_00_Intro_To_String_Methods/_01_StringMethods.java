@@ -66,6 +66,26 @@ public class _01_StringMethods {
     // assume there is only one space between the first and last name
     public static String lineLeader(String s1, String s2, String s3) {
         
+    	s1=s1.trim();
+    	s2=s2.trim();
+    	s3=s3.trim();
+    	
+    	String[] split1 = s1.split(s1);
+    	String[] split2 = s2.split(s2);
+    	String[] split3 = s3.split(s3);
+    	
+    	
+    	if ( split1 [1].compareTo(split2[1]) == 1) {
+			int twoVthree = split2 [1].compareTo(split3[1]);
+			System.out.println(split2 [1].compareTo(split3[1]));
+		}
+    	else if (split1 [1].compareTo(split2[1]) == -1) {
+			int oneVthree = split1 [1].compareTo(split3[1]);
+		} 
+    		
+		if (twoVthree==1) {
+			
+		}
     	
     	
     	
