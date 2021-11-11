@@ -70,22 +70,36 @@ public class _01_StringMethods {
     	s2=s2.trim();
     	s3=s3.trim();
     	
-    	String[] split1 = s1.split(s1);
-    	String[] split2 = s2.split(s2);
-    	String[] split3 = s3.split(s3);
+    	String[] split1 = s1.split(" ");
+    	String[] split2 = s2.split(" ");
+    	String[] split3 = s3.split(" ");
     	
-    	
-    	if ( split1 [1].compareTo(split2[1]) == 1) {
+    	//two before one 
+    	if ( split1 [1].compareTo(split2[1]) >0) {
 			int twoVthree = split2 [1].compareTo(split3[1]);
-			System.out.println(split2 [1].compareTo(split3[1]));
+		
+			//three before two
+			if (twoVthree> 0) {
+			return s3;
 		}
-    	else if (split1 [1].compareTo(split2[1]) == -1) {
+			else {
+				return s2;
+			}
+    	}
+    	//one before two
+    	else if (split1 [1].compareTo(split2[1]) <0) {
 			int oneVthree = split1 [1].compareTo(split3[1]);
-		} 
+		
+			if (oneVthree >0) {
+				//if three before one 
+			return s3;
+			}
+			else {
+				return s1;
+			}
+    	} 
     		
-		if (twoVthree==1) {
-			
-		}
+		
     	
     	
     	
@@ -95,12 +109,27 @@ public class _01_StringMethods {
 
     // Return the sum of all numerical digits in the String
     public static int numeralSum(String s) {
-        return 0;
+        
+    	int nums = 0;
+    	for (int i = 0; i < s.length(); i++) {
+			if (Character.isDigit(s.charAt(i))) {
+			
+				nums = nums+((int)s.charAt(i)-48);	
+			}
+		}
+    	
+    	
+    	
+    	return nums;
     }
 
     // Return the number of times String substring appears in String s
     public static int substringCount(String s, String substring) {
-        return 0;
+      
+    	
+    	
+    	
+    	return 0;
     }
 
     // Call Utilities.encrypt at the bottom of this file to encrypt String s
