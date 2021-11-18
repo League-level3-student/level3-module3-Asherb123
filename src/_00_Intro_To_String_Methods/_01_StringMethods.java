@@ -125,11 +125,17 @@ public class _01_StringMethods {
 
     // Return the number of times String substring appears in String s
     public static int substringCount(String s, String substring) {
-      
-    	
-    	
-    	
-    	return 0;
+     
+    	int nonoword = 0;
+    	 int index = s.indexOf(substring);
+      while ( index != -1) {
+		
+    		 nonoword = nonoword + 1;
+    		 index = s.indexOf(substring, index+1);
+    		
+			
+		}
+    	return nonoword;
     }
 
     // Call Utilities.encrypt at the bottom of this file to encrypt String s
