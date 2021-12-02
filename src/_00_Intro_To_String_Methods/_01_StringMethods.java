@@ -140,7 +140,12 @@ public class _01_StringMethods {
 
     // Call Utilities.encrypt at the bottom of this file to encrypt String s
     public static String encrypt(String s, char key) {
-        return null;
+        
+    	
+    	//Utilities.encrypt(s, key);
+    	
+    	
+    	return null;
     }
 
     // Call Utilities.decrypt at the bottom of this file to decrypt the

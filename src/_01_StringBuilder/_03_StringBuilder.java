@@ -8,7 +8,11 @@ public class _03_StringBuilder {
     }
     
     public static String reverse(String str) {
-        return null;
+      
+    	System.out.println(str.reverse().toString());
+    	str.reverse();
+    	
+    	return str;
     }
     
     public static String insert(String str, int index, char newChar) {
