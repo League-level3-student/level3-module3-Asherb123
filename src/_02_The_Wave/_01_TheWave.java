@@ -27,11 +27,15 @@ public class _01_TheWave {
     	
     	for (int i = 0; i < str.length(); i++) {
 		 char[] arr = str.toCharArray();
-        
-		arr[i] = Character.toUpperCase(arr[i]);		 
+       
+		 if ((arr[i]!=(' '))) {
+			
+	arr[i] = Character.toUpperCase(arr[i]);		 
     	String s = new String(arr);
     	wave.add(s);
-    	
+		
+    	}
+		 
     	}	
 		
 		
@@ -42,7 +46,7 @@ public class _01_TheWave {
 		
         
         
-        
+        System.out.println(wave);
         return wave;
     }
 }
